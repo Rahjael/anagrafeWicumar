@@ -123,8 +123,54 @@
     font-style: normal;
 
 }
+@font-face {
+  font-family: 'forget_me_knotroman';
+  src: url('./fonts/forgetmeknot-roman-webfont.woff2') format('woff2'),
+       url('./fonts/forgetmeknot-roman-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
+@font-face {
+  font-family: 'cardinalregular';
+  src: url('./fonts/cardinal-webfont.woff2') format('woff2'),
+       url('./fonts/cardinal-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
+@font-face {
+  font-family: 'cardinal_alternateregular';
+  src: url('./fonts/cardinal-alternate-webfont.woff2') format('woff2'),
+       url('./fonts/cardinal-alternate-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'carolingiaregular';
+  src: url('./fonts/carolingia-webfont.woff2') format('woff2'),
+       url('./fonts/carolingia-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'elementary_gothicregular';
+  src: url('./fonts/elementary_gothic_bookhand-webfont.woff2') format('woff2'),
+       url('./fonts/elementary_gothic_bookhand-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'pr_uncial2003';
+  src: url('./fonts/pr_uncial-new-webfont.woff2') format('woff2'),
+       url('./fonts/pr_uncial-new-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 
 
@@ -225,7 +271,22 @@ hr {
 
 }
 
+a:link, a:visited {
+  color:rgba(0, 0, 0, 0.322);
+}
 
+a:hover, a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+footer {
+  font-family: 'forget_me_knotroman';
+  color:rgba(0, 0, 0, 1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 10vmax 0 1vmax 0;
+}
 
 @keyframes textFadeIn {
   from { color: rgba(0, 0, 0, 0); }

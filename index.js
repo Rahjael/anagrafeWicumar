@@ -57,7 +57,7 @@ function printNames(generator) {
   if(intro) intro.remove();
 
 
-  let fontStyles = ['monday_routinesregular','nagietharegular','nagietharegular','photograph_signatureregular','retro_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','antro_vectrabolder','british_shorthairregular','charlotte_southernsouthern','charlotte_southernsouthern'];
+  let fontStyles = ['cardinalregular', 'cardinal_alternateregular', 'carolingiaregular', 'elementary_gothicregular', 'pr_uncial2003','forget_me_knotroman', 'monday_routinesregular','nagietharegular','nagietharegular','photograph_signatureregular','retro_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','antro_vectrabolder','british_shorthairregular','charlotte_southernsouthern','charlotte_southernsouthern'];
 
 
   // Delete current names
