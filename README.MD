@@ -1,6 +1,6 @@
 # Registro Anagrafe di Wicumar
 
-### An experimental fiddling for a procedural fantasy RPG name generator base on the Divina Commedia
+### An experimental fiddling for a procedural fantasy RPG name generator based on the Divina Commedia
 
 
 
@@ -12,6 +12,6 @@ Currently it is implemented as follows:
 
 - every syllable is stored in a database along with a few statistics such as frequency and which other syllables it can be connected with;
 
-- every names is generated associating random syllables, but following the statistics gathered from the given text.
+- every name is generated associating random syllables, but following the statistics gathered from the given text.
 
 
