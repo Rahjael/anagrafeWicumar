@@ -15,3 +15,5 @@ Currently it is implemented as follows:
 - every name is generated associating random syllables, but following the statistics gathered from the given text.
 
 
+
+You can check it out here: https://rahjael.github.io/anagrafeWicumar/
