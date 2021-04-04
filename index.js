@@ -1,7 +1,7 @@
-scrollHeight();
 
 document.querySelector("#nojs").remove();
 document.querySelector("main").style.display = 'inherit';
+scrollHeight();
 
 // Redraw when viewport is modified
 window.addEventListener('resize', function(event){
@@ -48,19 +48,29 @@ function generateMagicWord() {
   document.querySelector("#btn-magic-word").innerText = magicWord;
 }
 
+
+
 function printNames(generator) {
   let time = Date.now();
+
+  let intro = document.querySelector("#intro");
+  if(intro) intro.remove();
+
+
+  let fontStyles = ['monday_routinesregular','nagietharegular','nagietharegular','photograph_signatureregular','retro_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','a_agreement_signatureregular','antro_vectrabolder','british_shorthairregular','charlotte_southernsouthern','charlotte_southernsouthern'];
+
 
   // Delete current names
   document.querySelectorAll(".wicumarian-name").forEach( div => div.remove() );
 
-  let maxNames = randInclusive(5, 50);
+  let maxNames = randInclusive(1, 10);
 
   // Create names and append them
   for(let i = 0; i < maxNames; i++) {
     let newDiv = document.createElement("div");
     newDiv.setAttribute("class", "wicumarian-name");
     newDiv.innerText = generator.getName() + ' ' + generator.getName();
+    newDiv.style.fontFamily = fontStyles[randInclusive(0, fontStyles.length - 1)];
 
     document.querySelector("#bookpage").append(newDiv);
   }

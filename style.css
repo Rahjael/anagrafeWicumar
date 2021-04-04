@@ -19,6 +19,114 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'monday_routinesregular';
+    src: url('./fonts/monday_routines-webfont.woff2') format('woff2'),
+         url('./fonts/monday_routines-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nagietharegular';
+    src: url('./fonts/nagitha-webfont.woff2') format('woff2'),
+         url('./fonts/nagitha-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nagietharegular';
+    src: url('./fonts/nagitha-webfont.woff2') format('woff2'),
+         url('./fonts/nagitha-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'photograph_signatureregular';
+    src: url('./fonts/photograph_signature-webfont.woff2') format('woff2'),
+         url('./fonts/photograph_signature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'retro_signatureregular';
+    src: url('./fonts/retrosignature-webfont.woff2') format('woff2'),
+         url('./fonts/retrosignature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'a_agreement_signatureregular';
+    src: url('./fonts/aagreementsignature-webfont.woff2') format('woff2'),
+         url('./fonts/aagreementsignature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'a_agreement_signatureregular';
+    src: url('./fonts/aagreementsignature-webfont.woff2') format('woff2'),
+         url('./fonts/aagreementsignature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'a_agreement_signatureregular';
+    src: url('./fonts/aagreementsignature-webfont.woff2') format('woff2'),
+         url('./fonts/aagreementsignature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'a_agreement_signatureregular';
+    src: url('./fonts/aagreementsignature-webfont.woff2') format('woff2'),
+         url('./fonts/aagreementsignature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'antro_vectrabolder';
+    src: url('./fonts/antro_vectra_bolder-webfont.woff2') format('woff2'),
+         url('./fonts/antro_vectra_bolder-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'british_shorthairregular';
+    src: url('./fonts/british_shorthair-webfont.woff2') format('woff2'),
+         url('./fonts/british_shorthair-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'charlotte_southernsouthern';
+    src: url('./fonts/charlotte_southern-webfont.woff2') format('woff2'),
+         url('./fonts/charlotte_southern-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'charlotte_southernsouthern';
+    src: url('./fonts/charlotte_southern-webfont.woff2') format('woff2'),
+         url('./fonts/charlotte_southern-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 
 #nojs {
   display: flex;
@@ -84,8 +192,8 @@ hr {
 
 #magic-word-container {
   font-size: 1.5vmax;
-  margin: 1em;
-  padding: 1em;
+  margin: 0.3em;
+  padding: 0.3em;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -104,7 +212,7 @@ hr {
 
 .wicumarian-name {
   margin: 1em;
-  font-size: 2vmax;
+  font-size: 3vmax;
 
   animation: textFadeIn 2s;
 }
