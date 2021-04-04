@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'cup_and_talonregular';
+  src: url('./fonts/cup_and_talon-webfont.woff2') format('woff2'),
+       url('./fonts/cup_and_talon-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'celtasmigoriaceltasmigoria';
+  src: url('./fonts/celtasmigoria.woff2') format('woff2'),
+       url('./fonts/celtasmigoria.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pulsianregular';
+  src: url('./fonts/pulsian-webfont.woff2') format('woff2'),
+       url('./fonts/pulsian-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#nojs {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: seashell;
+  align-self: center;
+
+  height: 50vh;
+  width: 100vw;
+}
+
+main {
+  display: none;
+}
+
+/* 
+:root {
+  --fontSize: calc((1vw + 1vh) * .75);
+} 
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  /*font: var(--fontSize)/200% 'Bilbo Swash Caps', cursive;*/
+  background-image: url(bg.jpg);
+  background-size: auto;
+}
+
+h1 {  
+  font-family: 'celtasmigoriaceltasmigoria';
+  text-align: center;
+  font-size: 2vw;
+  line-height: 2em;
+  margin: 1em;
+}
+
+
+p, #magic-word-container, .wicumarian-name {
+  font-family: 'cup_and_talonregular';
+}
+
+p {  
+  font-size: 2vmax;
+  text-align: justify;
+  padding: 0em 2em 0em 2em;
+}
+
+hr {
+  width: 70%;
+}
+
+
+#magic-word-container {
+  font-size: 1.5vmax;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#btn-magic-word {
+  font-family: 'pulsianregular';
+  font-size: 3em;
+  padding: 0;
+  margin: 0.3em;
+
+  -webkit-animation: wordGlow 3s ease-in-out infinite alternate;
+  -moz-animation: wordGlow 3s ease-in-out infinite alternate;
+  animation: wordGlow 3s ease-in-out infinite alternate;
+}
+
+.wicumarian-name {
+  margin: 1em;
+  font-size: 2vmax;
+
+  animation: textFadeIn 2s;
+}
+#bookpage {
+  /* background-color: rgba(221, 154, 8, 0.3); */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0 2em 0 2em;
+
+}
+
+
+
+@keyframes textFadeIn {
+  from { color: rgba(0, 0, 0, 0); }
+}
+
+@keyframes onload {
+  from   { height: 0; }
+}
+@-webkit-keyframes onload {
+  from   { height: 0; }
+}
+
+@keyframes wordGlow {
+  from {
+    /* text-shadow: 20 20 10px #fff, 10 10 20px rgb(255, 255, 255), 10 10 30px #003de6, 10 10 40px #003af8, 10 10 50px #0f00e6, 10 10 60px #0064e6, 10 10 70px #000fe6; */
+    color: rgb(0, 0, 0);
+  }
+  
+  to {
+    /* text-shadow: 0 0 20px #fff, 0 0 30px #768aff, 0 0 40px #4d59ff, 0 0 50px #504dff, 0 0 60px #504dff, 0 0 70px #4d9aff, 0 0 80px #2011ee; */
+    color:rgba(255, 230, 0, 0.884);
+  }
+
+}
+@-webkit-keyframes wordGlow {
+  from {
+    /* text-shadow: 20 20 10px #fff, 10 10 20px rgb(255, 255, 255), 10 10 30px #003de6, 10 10 40px #003af8, 10 10 50px #0f00e6, 10 10 60px #0064e6, 10 10 70px #000fe6; */
+    color: rgb(0, 0, 0);
+  }
+  
+  to {
+    /* text-shadow: 0 0 20px #fff, 0 0 30px #768aff, 0 0 40px #4d59ff, 0 0 50px #504dff, 0 0 60px #504dff, 0 0 70px #4d9aff, 0 0 80px #2011ee; */
+    color:rgba(255, 230, 0, 0.884);
+  }
+}
+
+
+/* 
+main {
+  position: relative;
+  width: 100%;
+  height: auto;
+} */
+
+
+
+#parchment {
+  position: absolute;
+  display: flex;
+	width: 75%;
+  /* center page with absolute position */
+  top: 0%; left: 50%; transform: translate(-50%, 0);
+  margin: 2em 0 5em;
+	padding: 0em;
+	box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	background: #fffef0;
+  /* v2.1 : borders effect with SVG : try to play with scale to change them */
+  filter: url(#wavy2);
+  /* v2.2 : Noise added for a vellum paper effect */
+  background-image: url(data:image/png;base64,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);
+
+
+  /* animation: onload 3s cubic-bezier(.21,1.48,.2,.86);
+  -webkit-animation: onload 3s cubic-bezier(.21,1.48,.2,.86); */
+
+  /* -webkit-animation: onload 3s cubic-bezier(.21,1.48,.2,.86), parchmentWobble 5s cubic-bezier(.37,.81,.69,.32) 3050ms infinite alternate; */
+  /* animation: onload 3s cubic-bezier(.21,1.48,.2,.86), parchmentWobble 5s cubic-bezier(.37,.81,.69,.32) 3050ms infinite alternate; */
+  animation: onload 3s cubic-bezier(.21,1.48,.2,.86);
+
+}
+
+
+
+
+
+
+
+/* 
+main p {
+  font-size: 2.25em;
+  color: #7F3300;
+  margin-top: .75em;
+  text-align: justify;
+} */
+
+/*
+div p:not(:first-child)::first-letter {
+  float: left;
+  font: 1.7em/1em Morris;
+  text-shadow: 1px 1px 1px #000;
+  margin: 0 .5rem;
+}
+*/
+
+
+
+#contain {
+  position: relative;
+ 	display: flex;
+  flex-direction: column;
+	width: 75%;
+  height: auto;
+  margin: 0 auto;
+	padding: 3em;
+  /* background-color: rgba(255, 255, 255, 0.651); */
+
+  animation: textFadeIn 4s ease-in;
+}
+

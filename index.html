@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Registro anagrafe di Wicumar</title>
+
+  <script src="jsonDB.js" defer></script>
+  <script src="nameGenerator.js" defer></script>
+  <script src="presetTexts.js" defer></script>
+  <script src="index.js" defer></script>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <div id="nojs">
+    <p>JAVASCRIPT DISABLED.</p> 
+    <p>Please enable JavaScript and reload the page.</p>
+  </div>
+  
+<main>
+  <div id="parchment"></div>
+
+  
+  
+  <div id="contain">
+    
+
+    <h1>Registro de l'anagrafe di Wicumar</h1>
+    
+    <div id="intro">
+      <p>Ne lo presente tomo li venerabili custodi de la biblioteca di Wicumar da innumerevoli secoli tengon memoria de li nomi d'ogne anima nata sotto il nostro benedetto cielo, sia essa d'uomo, nano, elfo o d'ogne altra sorte di creatura dotata di senno.</p>
+      <p>Possano i posteri mai dimenticare coloro che da queste lande han veduto per la prima volta la luce.</p>
+      
+      <hr>
+      
+      <p>Io, Edamund Fiordibacco, con l'ausilio dello rispettabile gentiluomo Pozioniere e Mastro Erborista, Sig. Porfirio, nello giorno sette dello mese Fecondo dello corrente anno della Dorata Striatura Celeste,
+        infondo il presente tomo di magica essenza allo fine di conservarne i contenuti oltre ogne concepibile durata di vita umana o financo semidivina.
+      </p>
+      <p>
+        Onde addivenire allo nobile scopo di consentire ad ogni anima uguale menzione, provvedo inoltre acché solo e soltanto la Vibrazione, dalla quale ogne cosa materiale ed immateriale scaturisce, sia giudice di quanto occhio umano o d'altra creatura possa quivi consultare.
+      </p>
+      <p>        
+      </p>
+      <p>
+        Allo rituale magico assiste, nella figura di testimone e garante rispettabilissimo, Messere Selerion.
+      </p>
+    </div>
+    <div id="magic-word-container">
+      <div id="instructions">
+        Pronunciare la parola incantata:
+      </div>
+      <button id="btn-magic-word" type="button" onclick="printNames(generator)">test</button>
+    </div>
+
+    <div id="bookpage">      
+    </div>
+    
+  </div>
+
+</main>
+  
+<footer>
+
+</footer>
+
+
+
+  <svg>
+    <filter id="wavy2">
+      <feturbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feturbulence>
+      <feDisplacementMap in="SourceGraphic" scale="50" />
+    </filter>
+  </svg>
+
+</body>
+</html>
